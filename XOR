@@ -1,0 +1,10 @@
+#include <stdio.h>
+void main()
+{
+char input[]="Hello World";
+char result[sizeof(input)];
+for(int i=0;i<sizeof(input)-1;i++)
+result[i]=input[i]^0;
+printf("Originl string :%s\n",input);
+printf("XORed string :%s\n",result);
+}
